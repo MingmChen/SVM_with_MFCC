@@ -3,6 +3,7 @@
   ├ input           					# input audio data samples
   │	├ scream 					# audio data for trainning
   │	└ test 						# audio data for predicting
+  ├ model                     # well trained data
   ├ src    						# codes
   │ ├ Feature 						# MFCC Library
   │	├ libsvm					# svm machine library
