@@ -1,24 +1,25 @@
+```
 ─ project
-  ├ input           			# input audio data samples
+  ├ input           					# input audio data samples
   │	├ scream 					# audio data for trainning
   │	└ test 						# audio data for predicting
   ├ src    						# codes
-  │ ├ Feature 					# MFCC Library
+  │ ├ Feature 						# MFCC Library
   │	├ libsvm					# svm machine library
   │ ├ org 						# apache common library for calculate
-  │ ├ SignalProcess 			# library for read audio and wave I/O
+  │ ├ SignalProcess 					# library for read audio and wave I/O
   │ ├ Tool 						# library for calculate
   │ ├ FeatureExtraction.java 	# MFCC code
-  │ ├ svm_predict.java 			# svm predicting code
+  │ ├ svm_predict.java 					# svm predicting code
   │ ├ svm_scale.java
   │ ├ svm_toy.java
-  │ ├ svm_train.java 			# svm training code
-  │ └ test.java 				# main code
-  ├ scream_data.txt				# accumulated mfcc data
-  ├ scream_data.txt.model 		# svm model trainned by scream_data.txt
-  └ scream_data.txt.out 		# result of predicting program
-
-
+  │ ├ svm_train.java 					# svm training code
+  │ └ test.java 					# main code
+  ├ scream_data.txt					# accumulated mfcc data
+  ├ scream_data.txt.model 				# svm model trainned by scream_data.txt
+  └ scream_data.txt.out 				# result of predicting program
+```
+```
 src/test.java가 main 함수 입니다.
 
 test.java에 크게 3가지 기능이 구현되어 있습니다.
@@ -42,5 +43,6 @@ test.java에 크게 3가지 기능이 구현되어 있습니다.
 	테스트를 거칠 파일의 이름을 65번째 줄 주석에 따라 작성해주세요.
 
 사용하지 않을 부분에 대해서는 주석을 치신 다음 실행하시면 됩니다.
+```
 
 ***IntelliJ나 Eclipse를 통해 실행할 경우, 툴 내부에서, package나 import하는 부분에서 빨간줄이 쳐지는 경우가 있습니다. 프로그램 내부에 문제가 있기보다, 툴이 잡아내지 못하는 경우입니다. 무시하고 실행하시면 됩니다.
